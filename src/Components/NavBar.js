@@ -32,21 +32,11 @@ const ImgLogo = styled.img`
     width: 50px;
 `;
 
-const LogIn = styled.div`
-display: flex;
-flex-direction: column;
-align-items: center;
-width: 100px; 
-`;
-
-const ImgUser = styled.img`
-    width: 25px;
-    align-items: center;
-`;
-
-const P = styled.p`
-    text-align: center;
-    font-size: 0.8em;
+const Login = styled.button`
+    background-color: transparent;
+    border-color: transparent;
+    color: white;
+    font-size: 16px;
 `;
 
 export const NavBar = () => (
@@ -55,10 +45,9 @@ export const NavBar = () => (
             <ImgLogo src={logoImg} alt="logo" />
             <H1>Mr.Donald's</H1>
         </Logo>
-        <LogIn>
-            <ImgUser src={userImg} alt="user photo" />
-            <P>Войти</P>
-        </LogIn>
-        {/* <button>Войти</button> */}
+        <Login>
+            <img src={userImg} alt="user photo" />
+            <p>Войти</p>
+        </Login>
     </NavBarStyled>
 )
